@@ -26,9 +26,11 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: radial-gradient(circle at top, #111827 0, #020617 55%, #000 100%);
+      background:
+        radial-gradient(circle at top, #111827 0, #020617 55%, #000 100%);
       color: var(--text);
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
       padding: 1.5rem;
     }
 
@@ -38,12 +40,16 @@
     }
 
     .card {
-      background: linear-gradient(135deg, rgba(15,23,42,0.96), rgba(15,23,42,0.98));
+      background: linear-gradient(
+        135deg,
+        rgba(15, 23, 42, 0.96),
+        rgba(15, 23, 42, 0.98)
+      );
       border-radius: 1.5rem;
-      border: 1px solid rgba(148,163,184,0.45);
+      border: 1px solid rgba(148, 163, 184, 0.45);
       box-shadow:
-        0 30px 80px rgba(0,0,0,0.75),
-        0 0 0 1px rgba(15,23,42,0.9);
+        0 30px 80px rgba(0, 0, 0, 0.75),
+        0 0 0 1px rgba(15, 23, 42, 0.9);
       padding: 2.25rem 2rem 2rem;
       position: relative;
       overflow: hidden;
@@ -54,8 +60,16 @@
       position: absolute;
       inset: -40%;
       background:
-        radial-gradient(circle at 0% 0%, rgba(248,113,113,0.10), transparent 55%),
-        radial-gradient(circle at 100% 0%, rgba(59,130,246,0.12), transparent 55%);
+        radial-gradient(
+          circle at 0% 0%,
+          rgba(248, 113, 113, 0.1),
+          transparent 55%
+        ),
+        radial-gradient(
+          circle at 100% 0%,
+          rgba(59, 130, 246, 0.12),
+          transparent 55%
+        );
       opacity: 0.9;
       pointer-events: none;
     }
@@ -71,8 +85,12 @@
       gap: 0.4rem;
       padding: 0.18rem 0.7rem;
       border-radius: 999px;
-      border: 1px solid rgba(248,250,252,0.14);
-      background: linear-gradient(120deg, rgba(15,23,42,0.9), rgba(15,23,42,0.5));
+      border: 1px solid rgba(248, 250, 252, 0.14);
+      background: linear-gradient(
+        120deg,
+        rgba(15, 23, 42, 0.9),
+        rgba(15, 23, 42, 0.5)
+      );
       font-size: 0.7rem;
       letter-spacing: 0.12em;
       text-transform: uppercase;
@@ -85,7 +103,7 @@
       height: 6px;
       border-radius: 999px;
       background: #22c55e;
-      box-shadow: 0 0 0 4px rgba(34,197,94,0.25);
+      box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.25);
     }
 
     .title-row {
@@ -115,37 +133,39 @@
     .crest {
       margin-left: auto;
       border-radius: 1.25rem;
-      border: 1px solid rgba(148,163,184,0.6);
+      border: 1px solid rgba(148, 163, 184, 0.6);
       padding: 0.6rem 0.95rem;
       text-align: center;
       min-width: 130px;
-      background: radial-gradient(circle at top, rgba(248,250,252,0.08), transparent 65%);
+      background: radial-gradient(
+        circle at top,
+        rgba(248, 250, 252, 0.08),
+        transparent 65%
+      );
     }
 
-    .crest-top {
-      font-size: 0.7rem;
-      text-transform: uppercase;
-      letter-spacing: 0.18em;
-      color: var(--muted);
-      margin-bottom: 0.15rem;
+    /* Logo version of crest */
+    .crest-logo {
+      padding: 0.6rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.4rem;
     }
 
-    .crest-main {
-      font-size: 1.1rem;
-      font-weight: 700;
-      letter-spacing: 0.18em;
+    .team-logo {
+      width: 210px;
+      max-width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 1rem;
     }
 
-    .crest-main span {
-      color: var(--accent);
-    }
-
-    .crest-bottom {
+    .logo-caption {
       font-size: 0.7rem;
       text-transform: uppercase;
       letter-spacing: 0.16em;
       color: var(--muted);
-      margin-top: 0.2rem;
     }
 
     .body-row {
@@ -167,6 +187,13 @@
       .crest {
         margin-left: 0;
         min-width: 0;
+      }
+      .title-row {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .crest-logo {
+        align-self: center;
       }
     }
 
@@ -201,12 +228,15 @@
       background: linear-gradient(120deg, #dc2626, #b91c1c);
       color: white;
       box-shadow:
-        0 16px 40px rgba(0,0,0,0.6),
-        0 0 0 1px rgba(248,250,252,0.22);
+        0 16px 40px rgba(0, 0, 0, 0.6),
+        0 0 0 1px rgba(248, 250, 252, 0.22);
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
-      transition: transform 0.12s ease-out, box-shadow 0.12s ease-out, opacity 0.12s ease-out;
+      transition:
+        transform 0.12s ease-out,
+        box-shadow 0.12s ease-out,
+        opacity 0.12s ease-out;
     }
 
     .btn-primary span.icon {
@@ -217,16 +247,16 @@
     .btn-primary:hover {
       transform: translateY(-1px);
       box-shadow:
-        0 20px 50px rgba(0,0,0,0.75),
-        0 0 0 1px rgba(248,250,252,0.28);
+        0 20px 50px rgba(0, 0, 0, 0.75),
+        0 0 0 1px rgba(248, 250, 252, 0.28);
       opacity: 0.96;
     }
 
     .btn-primary:active {
       transform: translateY(1px);
       box-shadow:
-        0 10px 24px rgba(0,0,0,0.7),
-        0 0 0 1px rgba(248,250,252,0.25);
+        0 10px 24px rgba(0, 0, 0, 0.7),
+        0 0 0 1px rgba(248, 250, 252, 0.25);
     }
 
     .secondary-link {
@@ -245,9 +275,13 @@
 
     .info-card {
       border-radius: 1.1rem;
-      border: 1px solid rgba(148,163,184,0.55);
+      border: 1px solid rgba(148, 163, 184, 0.55);
       padding: 0.9rem 1rem;
-      background: radial-gradient(circle at top, rgba(15,23,42,0.9), rgba(15,23,42,1));
+      background: radial-gradient(
+        circle at top,
+        rgba(15, 23, 42, 0.9),
+        rgba(15, 23, 42, 1)
+      );
       font-size: 0.8rem;
     }
 
@@ -289,7 +323,7 @@
       gap: 0.75rem;
       font-size: 0.75rem;
       color: var(--muted);
-      border-top: 1px solid rgba(51,65,85,0.9);
+      border-top: 1px solid rgba(51, 65, 85, 0.9);
       padding-top: 0.75rem;
     }
 
@@ -323,35 +357,48 @@
         <div class="title-row">
           <div class="title-text">
             <h1>Fort Sask <span>Rangers</span> Game Day</h1>
-            <p>The digital game sheet for players, families, and fans of the CAM Industrial Rangers.</p>
+            <p>
+              The digital game sheet for players, families, and fans of the
+              CAM Industrial Rangers.
+            </p>
           </div>
 
-          <div class="crest">
-            <div class="crest-top">Today’s Hub</div>
-            <div class="crest-main">RANG<span>ERS</span></div>
-            <div class="crest-bottom">CAM Industrial U11 AA</div>
+          <!-- Logo block -->
+          <div class="crest crest-logo">
+            <img
+              src="u11aa-rangers-logo.png"
+              alt="Fort Sask U11AA Rangers"
+              class="team-logo"
+            />
+            <div class="logo-caption">CAM Industrial U11AA Rangers</div>
           </div>
         </div>
 
         <div class="body-row">
           <section>
             <p class="blurb">
-              Welcome to the <strong>Rangers Game Day Program</strong> — a live, mobile-friendly hub for
-              rosters, lines, and key details for each matchup. No paper, no clutter — just tap, scroll,
-              and you’re in the game.
+              Welcome to the <strong>Rangers Game Day Program</strong> — a live,
+              mobile-friendly hub for rosters, lines, and key details for each
+              matchup. No paper, no clutter — just tap, scroll, and you’re in
+              the game.
             </p>
 
             <div class="cta-group">
               <button
                 class="btn-primary"
-                onclick="window.location.href='https://script.google.com/macros/s/AKfycbzi4NJYJDCwIovroQ2aIQdTyOG2L83OS2BGlStfygeRVCkeSfC0YUq1fAWU86ipCbERfA/exec';">
+                onclick="window.location.href='https://script.google.com/macros/s/AKfycbzi4NJYJDCwIovroQ2aIQdTyOG2L83OS2BGlStfygeRVCkeSfC0YUq1fAWU86ipCbERfA/exec';"
+              >
                 <span>Enter Game Day Program</span>
-                <span class="icon">▶</span>
+                <span class="icon">🏒</span>
               </button>
 
               <div class="secondary-link">
-                Trouble loading?  
-                <a href="https://script.google.com/macros/s/AKfycbzi4NJYJDCwIovroQ2aIQdTyOG2L83OS2BGlStfygeRVCkeSfC0YUq1fAWU86ipCbERfA/exec" target="_blank" rel="noopener">
+                Trouble loading?
+                <a
+                  href="https://script.google.com/macros/s/AKfycbzi4NJYJDCwIovroQ2aIQdTyOG2L83OS2BGlStfygeRVCkeSfC0YUq1fAWU86ipCbERfA/exec"
+                  target="_blank"
+                  rel="noopener"
+                >
                   Tap here to open directly.
                 </a>
               </div>
@@ -363,19 +410,20 @@
 
             <div class="info-row">
               <div class="info-label">Rosters</div>
-              <div class="info-value">Numbers, names & positions</div>
+              <div class="info-value">Numbers, names &amp; positions</div>
             </div>
             <div class="info-row">
               <div class="info-label">Matchup info</div>
-              <div class="info-value">Opponent, rink & puck drop</div>
+              <div class="info-value">Opponent, rink &amp; puck drop</div>
             </div>
             <div class="info-row">
               <div class="info-label">Player details</div>
-              <div class="info-value">Hometown & fun extras</div>
+              <div class="info-value">Hometown &amp; fun extras</div>
             </div>
 
             <p class="info-note">
-              Best viewed on your phone in portrait mode — bookmark it to quickly check lineups before every game.
+              Best viewed on your phone in portrait mode — bookmark it to
+              quickly check lineups before every game.
             </p>
           </aside>
         </div>
