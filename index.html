@@ -242,18 +242,6 @@
       margin-left: 0.05rem;
     }
 
-    .hint {
-      font-size: 0.76rem;
-      color: var(--muted);
-      position: relative;
-      z-index: 1;
-    }
-
-    .hint strong {
-      color: var(--accent-soft);
-      font-weight: 500;
-    }
-
     /* Right side: Program snapshot panel */
     .panel {
       position: relative;
@@ -318,12 +306,12 @@
     }
 
     .logo-wrapper {
-      width: 72px;
-      height: 72px;
-      border-radius: 1.2rem;
-      border: 1px solid rgba(248, 250, 252, 0.85);
+      width: 78px;
+      height: 78px;
+      border-radius: 1.3rem;
+      border: 1px solid rgba(248, 250, 252, 0.9);
       background:
-        radial-gradient(circle at top, rgba(248, 250, 252, 0.18), transparent 55%),
+        radial-gradient(circle at top, rgba(248, 250, 252, 0.22), transparent 55%),
         #020617;
       display: flex;
       align-items: center;
@@ -416,9 +404,34 @@
       flex-wrap: wrap;
     }
 
-    .bottom-note strong {
+    .bottom-left {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .bottom-left strong {
       color: var(--accent-soft);
       font-weight: 500;
+    }
+
+    .gdhq-logo-wrap {
+      width: 22px;
+      height: 22px;
+      border-radius: 0.6rem;
+      border: 1px solid rgba(148, 163, 184, 0.6);
+      background: #020617;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .gdhq-logo-img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
     }
 
     .tiny-pill {
@@ -457,16 +470,16 @@
           <span>U11 Cam Industrial Rangers</span>
         </div>
 
-        <div class="title">Fort Saskatchewan • Game Day Program</div>
+        <div class="title">Fort Saskatchewan • Digital Game Day Program</div>
 
         <h1 class="headline">
           <span>Rangers</span> Game Day
         </h1>
 
         <p class="subheadline">
-          Your digital game day program for the U11 Cam Industrial Rangers. View rosters, player details,
-          sponsors, and game information in one clean, mobile-friendly page — built so families and fans
-          always have the latest info at their fingertips.
+          This is the central link for the U11 Cam Industrial Rangers game day program.
+          From here, you can open a live, mobile-friendly page with rosters, player details,
+          sponsors, and key game information — updated as the season goes on.
         </p>
 
         <div class="pill-points">
@@ -484,19 +497,14 @@
             target="_blank"
             rel="noopener"
           >
-            Enter Game Day Program
+            Open Game Day Program
             <span class="btn-icon">↗</span>
           </a>
 
           <a class="btn-secondary" href="mailto:dsegberg@gmail.com?subject=Rangers%20Game%20Day%20Program">
-            Ask about this program
+            Questions about this program?
           </a>
         </div>
-
-        <p class="hint">
-          <strong>Tip:</strong> Use this page behind your QR codes and team website links so fans always land
-          on the correct game day program for the Rangers.
-        </p>
       </section>
 
       <!-- RIGHT: Program snapshot panel -->
@@ -505,14 +513,14 @@
           <span class="mini-label">Tonight’s experience</span>
           <span class="status-chip">
             <span class="status-dot"></span>
-            Live for game use
+            Ready for game use
           </span>
         </div>
 
         <div class="logo-card">
           <div class="logo-wrapper">
-            <!-- Your Rangers logo file in repo root -->
-            <img class="logo-img" src="u11aa-rangers-logo.png" alt="U11AA Rangers Logo">
+            <!-- Save your Rangers logo as rangers-logo.png in the same folder as this file -->
+            <img class="logo-img" src="rangers-logo.png" alt="U11 Cam Industrial Rangers Logo">
           </div>
           <div>
             <div class="logo-text-main">U11 Rangers</div>
@@ -536,15 +544,21 @@
         </div>
 
         <div class="feature-list">
-          <span>Always-current roster and numbers</span>
+          <span>Always-current roster and jersey numbers</span>
           <span>Spotlight for sponsors supporting the team</span>
           <span>One link for parents, fans &amp; scouts</span>
           <span>Designed to complement the in-arena experience</span>
         </div>
 
         <div class="bottom-note">
-          <span>Powered by <strong>GameDayHQ</strong></span>
-          <span class="tiny-pill">Built for teams, not paper programs</span>
+          <div class="bottom-left">
+            <div class="gdhq-logo-wrap">
+              <!-- Save your GameDayHQ logo as gamedayhq-logo.png in the same folder -->
+              <img class="gdhq-logo-img" src="gamedayhq-logo.png" alt="GameDayHQ Logo">
+            </div>
+            <span>Powered by <strong>GameDayHQ</strong></span>
+          </div>
+          <span class="tiny-pill">A simple digital program built for the U11 Cam Industrial Rangers.</span>
         </div>
       </aside>
     </div>
