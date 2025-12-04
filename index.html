@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>U11 Cam Industrial Rangers | Game Day Program</title>
+  <title>U11AA Cam Industrial Rangers | Game Day Program</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- Fonts -->
@@ -121,7 +121,16 @@
       letter-spacing: 0.18em;
       font-size: 0.8rem;
       color: var(--muted);
-      margin-bottom: 0.2rem;
+      margin-bottom: 0.5rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Centered hero block */
+    .hero-center {
+      text-align: center;
+      max-width: 32rem;
+      margin: 0 auto;
       position: relative;
       z-index: 1;
     }
@@ -133,8 +142,6 @@
       letter-spacing: 0.14em;
       text-transform: uppercase;
       margin-bottom: 0.35rem;
-      position: relative;
-      z-index: 1;
     }
 
     .headline span {
@@ -144,19 +151,15 @@
     .subheadline {
       font-size: 0.95rem;
       color: var(--muted);
-      max-width: 34rem;
       margin-bottom: 1.1rem;
-      position: relative;
-      z-index: 1;
     }
 
     .pill-points {
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
       gap: 0.4rem;
       margin-bottom: 1.1rem;
-      position: relative;
-      z-index: 1;
     }
 
     .pill {
@@ -173,10 +176,9 @@
     .actions {
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
       gap: 0.6rem;
       margin-bottom: 0.9rem;
-      position: relative;
-      z-index: 1;
     }
 
     .btn-primary {
@@ -398,33 +400,29 @@
       font-size: 0.72rem;
       color: var(--muted);
       display: flex;
-      justify-content: space-between;
-      gap: 0.6rem;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-    .bottom-left {
-      display: inline-flex;
+      flex-direction: column;
       align-items: center;
       gap: 0.4rem;
+      text-align: center;
     }
 
-    .bottom-left strong {
-      color: var(--accent-soft);
-      font-weight: 500;
+    .gdhq-brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
     }
 
     .gdhq-logo-wrap {
-      width: 22px;
-      height: 22px;
-      border-radius: 0.6rem;
-      border: 1px solid rgba(148, 163, 184, 0.6);
+      width: 28px;
+      height: 28px;
+      border-radius: 0.8rem;
+      border: 1px solid rgba(148, 163, 184, 0.7);
       background: #020617;
       display: flex;
       align-items: center;
       justify-content: center;
       overflow: hidden;
+      box-shadow: 0 12px 28px rgba(15, 23, 42, 0.9);
     }
 
     .gdhq-logo-img {
@@ -434,15 +432,19 @@
       display: block;
     }
 
+    .gdhq-text-strong {
+      color: var(--accent-soft);
+      font-weight: 500;
+    }
+
     .tiny-pill {
       border-radius: 999px;
       border: 1px solid rgba(148, 163, 184, 0.45);
-      padding: 0.16rem 0.55rem;
+      padding: 0.18rem 0.7rem;
       font-size: 0.68rem;
       color: var(--muted);
       white-space: normal;
       max-width: 100%;
-      text-align: right;
     }
 
     @media (max-width: 768px) {
@@ -450,11 +452,8 @@
         grid-template-columns: repeat(3, minmax(0, 1fr));
       }
       .bottom-note {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      .tiny-pill {
-        text-align: left;
+        align-items: center;
+        text-align: center;
       }
     }
   </style>
@@ -467,43 +466,45 @@
       <section>
         <div class="brand-tag">
           <span class="brand-dot"></span>
-          <span>U11 Cam Industrial Rangers</span>
+          <span>U11AA Cam Industrial Rangers</span>
         </div>
 
         <div class="title">Fort Saskatchewan • Digital Game Day Program</div>
 
-        <h1 class="headline">
-          <span>Rangers</span> Game Day
-        </h1>
+        <div class="hero-center">
+          <h1 class="headline">
+            <span>Rangers</span> Game Day
+          </h1>
 
-        <p class="subheadline">
-          This is the central link for the U11 Cam Industrial Rangers game day program.
-          From here, you can open a live, mobile-friendly page with rosters, player details,
-          sponsors, and key game information — updated as the season goes on.
-        </p>
+          <p class="subheadline">
+            This is the central link for the U11AA Cam Industrial Rangers game day program.
+            Open a live, mobile-friendly page with rosters, player details, sponsors, and key
+            game information — updated as the season goes on.
+          </p>
 
-        <div class="pill-points">
-          <span class="pill">Home &amp; opponent rosters</span>
-          <span class="pill">Player details &amp; numbers</span>
-          <span class="pill">Sponsors &amp; team branding</span>
-          <span class="pill">Optimized for phones at the rink</span>
-        </div>
+          <div class="pill-points">
+            <span class="pill">Home &amp; opponent rosters</span>
+            <span class="pill">Player details &amp; numbers</span>
+            <span class="pill">Sponsors &amp; team branding</span>
+            <span class="pill">Optimized for phones at the rink</span>
+          </div>
 
-        <div class="actions">
-          <!-- Main Game Day Program link -->
-          <a
-            class="btn-primary"
-            href="https://script.google.com/macros/s/AKfycbzi4NJYJDCwIovroQ2aIQdTyOG2L83OS2BGlStfygeRVCkeSfC0YUq1fAWU86ipCbERfA/exec"
-            target="_blank"
-            rel="noopener"
-          >
-            Open Game Day Program
-            <span class="btn-icon">↗</span>
-          </a>
+          <div class="actions">
+            <!-- Main Game Day Program link -->
+            <a
+              class="btn-primary"
+              href="https://script.google.com/macros/s/AKfycbzi4NJYJDCwIovroQ2aIQdTyOG2L83OS2BGlStfygeRVCkeSfC0YUq1fAWU86ipCbERfA/exec"
+              target="_blank"
+              rel="noopener"
+            >
+              Open Game Day Program
+              <span class="btn-icon">↗</span>
+            </a>
 
-          <a class="btn-secondary" href="mailto:dsegberg@gmail.com?subject=Rangers%20Game%20Day%20Program">
-            Questions about this program?
-          </a>
+            <a class="btn-secondary" href="mailto:dsegberg@gmail.com?subject=Rangers%20Game%20Day%20Program">
+              Questions about this program?
+            </a>
+          </div>
         </div>
       </section>
 
@@ -520,10 +521,10 @@
         <div class="logo-card">
           <div class="logo-wrapper">
             <!-- Save your Rangers logo as rangers-logo.png in the same folder as this file -->
-            <img class="logo-img" src="rangers-logo.png" alt="U11 Cam Industrial Rangers Logo">
+            <img class="logo-img" src="rangers-logo.png" alt="U11AA Cam Industrial Rangers Logo">
           </div>
           <div>
-            <div class="logo-text-main">U11 Rangers</div>
+            <div class="logo-text-main">U11AA Rangers</div>
             <div class="logo-text-sub">Cam Industrial • Fort Saskatchewan</div>
           </div>
         </div>
@@ -551,14 +552,14 @@
         </div>
 
         <div class="bottom-note">
-          <div class="bottom-left">
+          <div class="gdhq-brand">
             <div class="gdhq-logo-wrap">
               <!-- Save your GameDayHQ logo as gamedayhq-logo.png in the same folder -->
               <img class="gdhq-logo-img" src="gamedayhq-logo.png" alt="GameDayHQ Logo">
             </div>
-            <span>Powered by <strong>GameDayHQ</strong></span>
+            <span>Powered by <span class="gdhq-text-strong">GameDayHQ</span></span>
           </div>
-          <span class="tiny-pill">A simple digital program built for the U11 Cam Industrial Rangers.</span>
+          <span class="tiny-pill">A simple digital program built for the U11AA Cam Industrial Rangers.</span>
         </div>
       </aside>
     </div>
