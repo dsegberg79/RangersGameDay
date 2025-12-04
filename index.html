@@ -402,27 +402,37 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 0.4rem;
+      gap: 0.5rem;
       text-align: center;
     }
 
     .gdhq-brand {
       display: inline-flex;
       align-items: center;
-      gap: 0.45rem;
+      gap: 0.6rem;
+      padding: 0.35rem 0.9rem;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.7);
+      background: rgba(15, 23, 42, 0.98);
+      box-shadow:
+        0 14px 32px rgba(15, 23, 42, 0.95),
+        0 0 0 1px rgba(15, 23, 42, 1);
     }
 
     .gdhq-logo-wrap {
-      width: 28px;
-      height: 28px;
-      border-radius: 0.8rem;
-      border: 1px solid rgba(148, 163, 184, 0.7);
-      background: #020617;
+      width: 38px;
+      height: 38px;
+      border-radius: 1rem;
+      border: 1px solid rgba(248, 250, 252, 0.9);
+      background:
+        radial-gradient(circle at top, rgba(248, 250, 252, 0.3), transparent 55%),
+        #020617;
       display: flex;
       align-items: center;
       justify-content: center;
       overflow: hidden;
-      box-shadow: 0 12px 28px rgba(15, 23, 42, 0.9);
+      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.9);
+      flex-shrink: 0;
     }
 
     .gdhq-logo-img {
@@ -432,9 +442,21 @@
       display: block;
     }
 
+    .gdhq-text-block {
+      text-align: left;
+    }
+
     .gdhq-text-strong {
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-size: 0.74rem;
       color: var(--accent-soft);
-      font-weight: 500;
+      display: block;
+    }
+
+    .gdhq-text-sub {
+      font-size: 0.7rem;
+      color: var(--muted);
     }
 
     .tiny-pill {
@@ -469,7 +491,7 @@
           <span>U11AA Cam Industrial Rangers</span>
         </div>
 
-        <div class="title">Fort Saskatchewan • Digital Game Day Program</div>
+        <div class="title">Fort Saskatchewan • Official Digital Game Day Program</div>
 
         <div class="hero-center">
           <h1 class="headline">
@@ -477,9 +499,9 @@
           </h1>
 
           <p class="subheadline">
-            This is the central link for the U11AA Cam Industrial Rangers game day program.
-            Open a live, mobile-friendly page with rosters, player details, sponsors, and key
-            game information — updated as the season goes on.
+            The official digital game day program for the U11AA Cam Industrial Rangers. One link
+            gives you live rosters, player details, sponsors, and key game information — built to
+            feel like a pro game-night experience on your phone.
           </p>
 
           <div class="pill-points">
@@ -524,8 +546,8 @@
             <img class="logo-img" src="rangers-logo.png" alt="U11AA Cam Industrial Rangers Logo">
           </div>
           <div>
-            <div class="logo-text-main">U11AA Rangers</div>
-            <div class="logo-text-sub">Cam Industrial • Fort Saskatchewan</div>
+            <div class="logo-text-main">Rangers Hockey</div>
+            <div class="logo-text-sub">U11AA Cam Industrial • Fort Saskatchewan</div>
           </div>
         </div>
 
@@ -557,9 +579,12 @@
               <!-- Save your GameDayHQ logo as gamedayhq-logo.png in the same folder -->
               <img class="gdhq-logo-img" src="gamedayhq-logo.png" alt="GameDayHQ Logo">
             </div>
-            <span>Powered by <span class="gdhq-text-strong">GameDayHQ</span></span>
+            <div class="gdhq-text-block">
+              <span class="gdhq-text-strong">GameDayHQ</span>
+              <span class="gdhq-text-sub">Digital tools built for teams, not spreadsheets.</span>
+            </div>
           </div>
-          <span class="tiny-pill">A simple digital program built for the U11AA Cam Industrial Rangers.</span>
+          <span class="tiny-pill">A pro-style digital program built for the U11AA Cam Industrial Rangers.</span>
         </div>
       </aside>
     </div>
